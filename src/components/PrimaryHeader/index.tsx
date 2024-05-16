@@ -9,28 +9,52 @@ import {
 	ProfileDetailsContainer,
 } from "./styles";
 
-export default function PrimaryHeader() {
+type PrimaryHeaderProps = {
+	avatar?: string;
+	goBack?: boolean;
+	notification?: boolean;
+	plus?: boolean;
+};
+
+export default function PrimaryHeader({
+	avatar,
+	goBack,
+	notification,
+	plus,
+}: PrimaryHeaderProps) {
 	return (
 		<Container>
-			<ProfileDetailsContainer>
-				<Avatar
-					source={{
-						uri: "https://avatars.githubusercontent.com/u/7297243?s=96&v=4",
-					}}
-				/>
-
-				<Content>Welcome, Antonio</Content>
-			</ProfileDetailsContainer>
-
-			<ActionsContainer>
+			{goBack ? (
 				<ActionsButton>
 					<Ionicons name="notifications" size={19} color="white" />
 				</ActionsButton>
+			) : (
+				<>
+					<ProfileDetailsContainer>
+						<Avatar
+							source={{
+								uri: avatar,
+							}}
+						/>
 
-				<ActionsButton>
-					<Ionicons name="add" size={19} color="white" />
-				</ActionsButton>
-			</ActionsContainer>
+						<Content>Welcome, Antonio</Content>
+					</ProfileDetailsContainer>
+
+					<ActionsContainer>
+						{notification && (
+							<ActionsButton>
+								<Ionicons name="notifications" size={19} color="white" />
+							</ActionsButton>
+						)}
+
+						{plus && (
+							<ActionsButton>
+								<Ionicons name="add" size={19} color="white" />
+							</ActionsButton>
+						)}
+					</ActionsContainer>
+				</>
+			)}
 		</Container>
 	);
 }

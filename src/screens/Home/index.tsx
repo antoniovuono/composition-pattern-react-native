@@ -1,18 +1,16 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import PrimaryHeader from "../../components/PrimaryHeader";
+import { Container } from "./styles";
 
 export const Home = () => {
 	return (
-		<View style={styles.container}>
-			<PrimaryHeader />
-		</View>
+		<Container>
+			<PrimaryHeader
+				notification
+				plus
+				avatar="https://avatars.githubusercontent.com/u/7297243?s=96&v=4"
+			/>
+		</Container>
 	);
 };
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: "#201d1d",
-	},
-});
