@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryHeader from "../../components/PrimaryHeader";
 import { Container } from "./styles";
+import { StatusBar } from "react-native";
 
 export const Home = () => {
 	return (
