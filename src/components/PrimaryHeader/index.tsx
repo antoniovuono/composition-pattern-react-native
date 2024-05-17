@@ -14,6 +14,9 @@ type PrimaryHeaderProps = {
 	goBack?: boolean;
 	notification?: boolean;
 	plus?: boolean;
+	onGoBack?: () => void;
+	onNotification?: () => void;
+	onAdd?: () => void;
 };
 
 export default function PrimaryHeader({
@@ -21,11 +24,14 @@ export default function PrimaryHeader({
 	goBack,
 	notification,
 	plus,
+	onGoBack,
+	onNotification,
+	onAdd,
 }: PrimaryHeaderProps) {
 	return (
 		<Container>
 			{goBack ? (
-				<ActionsButton>
+				<ActionsButton onPress={onGoBack}>
 					<Ionicons name="arrow-back" size={19} color="white" />
 				</ActionsButton>
 			) : (
@@ -42,13 +48,13 @@ export default function PrimaryHeader({
 
 					<ActionsContainer>
 						{notification && (
-							<ActionsButton>
+							<ActionsButton onPress={onNotification}>
 								<Ionicons name="notifications" size={19} color="white" />
 							</ActionsButton>
 						)}
 
 						{plus && (
-							<ActionsButton>
+							<ActionsButton onPress={onAdd}>
 								<Ionicons name="add" size={19} color="white" />
 							</ActionsButton>
 						)}
