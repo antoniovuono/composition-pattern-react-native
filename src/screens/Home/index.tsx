@@ -6,8 +6,7 @@ export const Home = () => {
 	return (
 		<Container>
 			<PrimaryHeader
-				notification
-				plus
+				goBack
 				avatar="https://avatars.githubusercontent.com/u/7297243?s=96&v=4"
 			/>
 		</Container>

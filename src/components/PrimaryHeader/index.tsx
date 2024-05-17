@@ -26,7 +26,7 @@ export default function PrimaryHeader({
 		<Container>
 			{goBack ? (
 				<ActionsButton>
-					<Ionicons name="notifications" size={19} color="white" />
+					<Ionicons name="arrow-back" size={19} color="white" />
 				</ActionsButton>
 			) : (
 				<>
