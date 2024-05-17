@@ -1,15 +1,32 @@
 import React from "react";
-import PrimaryHeader from "../../components/PrimaryHeader";
 import { Container } from "./styles";
-import { StatusBar } from "react-native";
+import { Header } from "../../components";
+import { ActionsButton } from "../../components/PrimaryHeader/styles";
 
 export const Home = () => {
 	return (
 		<Container>
-			<PrimaryHeader
-				goBack
-				avatar="https://avatars.githubusercontent.com/u/7297243?s=96&v=4"
-			/>
+			<Header.Box>
+				<Header.ProfileDetailsContainer>
+					<Header.Avatar url="https://avatars.githubusercontent.com/u/7297243?s=96&v=4"/>
+
+					<Header.ProfileDetailsContent>
+						Bem vindo, Antonio
+					</Header.ProfileDetailsContent>
+				</Header.ProfileDetailsContainer>
+
+			<Header.ActionsContainer>
+				<ActionsButton onPress={() => console.log("notificaton_click")}>
+					<Header.Icon iconName="notifications" />
+				</ActionsButton>
+
+				<ActionsButton onPress={() => console.log("add_click")}>
+					<Header.Icon iconName="add" />
+				</ActionsButton>
+			</Header.ActionsContainer>
+			</Header.Box>
 		</Container>
 	);
 };
+
+
