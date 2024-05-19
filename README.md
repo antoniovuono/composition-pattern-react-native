@@ -4,14 +4,16 @@ O composition pattern é um padrão de design de software que sugere a criação
 
 ## O que isso significa?
 
-Em vez de depender da herança de classes (orientação a objetos) ou de passar parâmetros por propriedades (prop drilling, na programação funcional), o padrão de composição enfatiza a combinação flexível de componentes. Isso facilita a customização e o reaproveitamento de código.
+O padrão de composição consiste em criar componentes complexos a partir da combinação de unidades mais simples. Em vez de herança ou propriedades, a composição favorece a reutilização ao juntar componentes menores para formar um maior. Isso simplifica o código, facilita a manutenção e oferece flexibilidade na construção de sistemas modulares e adaptáveis.
 
-### Benefícios do Composition Pattern
+## Benefícios de utilizar:
 
-- **Reutilização de Código**: Componentes simples podem ser combinados de várias maneiras para criar componentes mais complexos, promovendo a reutilização e evitando duplicação de código.
-- **Flexibilidade**: Ao compor componentes, você pode criar novas funcionalidades e interfaces de maneira flexível e dinâmica, sem a rigidez da herança.
-- **Manutenibilidade**: Componentes menores e bem definidos são mais fáceis de manter, testar e depurar.
-
-Esse repositório serviu como base para um artigo que escrevi no medium.
+- Reutilização de Código
+- Modularidade
+- Flexibilidade
+- Manutenção Simplificada
+- Legibilidade do Código
+- Redução de complexidade ciclomática
+- Esse repositório serviu como base para um artigo que escrevi no medium.
 
 [Acessar artigo](https://medium.com/p/09c0d3fc1400)
