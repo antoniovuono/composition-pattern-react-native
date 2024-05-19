@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "./styles";
 import { Header } from "../../components";
 import { ActionsButton } from "../../components/PrimaryHeader/styles";
-import PrimaryHeader from "../../components/PrimaryHeader";
 
 // variant 1
 export const Home = () => {
