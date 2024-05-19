@@ -1,5 +1,5 @@
-import { ActionsContainer } from "../PrimaryHeader/styles";
 import { ActionsButton } from "./ActionsButton";
+import { ActionsContainer } from "./ActionsContainer";
 import { Avatar } from "./Avatar";
 import { Box } from "./Box";
 import { Icon } from "./Icon";
@@ -11,7 +11,7 @@ export const Header = {
     ProfileDetailsContainer,
     ProfileDetailsContent,
     Avatar,
-    ActionsContainer,
     ActionsButton,
+    ActionsContainer,
     Icon
 }

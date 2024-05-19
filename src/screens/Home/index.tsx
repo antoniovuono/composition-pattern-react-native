@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "./styles";
 import { Header } from "../../components";
 import { ActionsButton } from "../../components/PrimaryHeader/styles";
+import PrimaryHeader from "../../components/PrimaryHeader";
 
 export const Home = () => {
 	return (
@@ -25,6 +26,7 @@ export const Home = () => {
 				</ActionsButton>
 			</Header.ActionsContainer>
 			</Header.Box>
+
 		</Container>
 	);
 };

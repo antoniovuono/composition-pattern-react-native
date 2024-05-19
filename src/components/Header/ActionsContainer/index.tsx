@@ -4,11 +4,11 @@ import {
  Container
 } from './styles';
 
-type ActionsButtonProps = {
+type ActionsContainerProps = {
     children: React.ReactNode;
 }
 
-export const ActionsButton = ({children}: ActionsButtonProps) => {
+export const ActionsContainer = ({children}: ActionsContainerProps) => {
 return (
   <Container> 
     {children}
