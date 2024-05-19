@@ -14,4 +14,4 @@ Em vez de depender da herança de classes (orientação a objetos) ou de passar 
 
 Esse repositório serviu como base para um artigo que escrevi no medium.
 
-[Clique aqui](!https://medium.com/p/09c0d3fc1400)
+[Acessar artigo](https://medium.com/p/09c0d3fc1400)
